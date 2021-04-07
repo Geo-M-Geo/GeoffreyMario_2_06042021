@@ -1,0 +1,68 @@
+body
+{
+    width: 1338px;
+    margin: auto;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+header nav ul
+{
+     display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav a
+{
+    margin-left: 67px;
+    text-decoration: none;
+}
+
+#hebergement
+{
+    color: #0065FC;
+    font-weight: 500;
+}
+
+#activites
+{
+    color:black;
+}
+
+#inscrire
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+h1
+{
+    font-weight:800;
+}
+
+.recherche p
+{
+    font-weight: 500;
+}
+
+.barre_recherche
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#position
+{
+    border: 1px black solid;
+    border-radius: 20px 0 0 20px;
+    background-color: #F2F2F2;
+}
+
+

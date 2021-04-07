@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <title>Reservia</title>
 </head>
 
 <body>
+    
     <!-- Logo et navigation -->
+
     <header>
         <div id="logo">
-            <img src="images/logo/Reservia@3x.png" alt="logo Reservia">
+            <img src="images/logo/Reservia.svg" alt="logo Reservia">
         </div>
         <nav>
             <ul>
                 <!-- Rajouter des ancres -->
                 <li><a id="hebergement" href="#">Hébergements</a></li>
                 <li><a id="activites" href="#">Activités</a></li>
-                <li><a href="#">S'inscrire</a></li>
+                <li><a id="inscrire" href="#">S'inscrire</a></li>
             </ul>
         </nav>
 
@@ -27,15 +32,22 @@
 
     <!-- Titre, barre de recherche et filtres -->
     <section class="recherche">
+        
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2>En plein centre ville ou en pleine nature</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+        
         <div class="barre_recherche">
-            <i class="fas fa-map-marker-alt"></i>
-            <form method="post" action="traitement.php">
-                <p><input type="text" name="lieu" placeholder="Marseille, France" /></p>
-                <a href="#">Rechercher</a>
+           
+            <form class="barre" method="post" action="traitement.php">               
+            <p>
+                <i id="position" class="fas fa-map-marker-alt"></i>
+                <input id="text" type="text" name="lieu" placeholder="Marseille, France" />
+                <a id="bouton_recherche" href="#">Rechercher</a>
+            </p>
+                
             </form>
-            <div class="filtres">
+        </div>
+        <div class="filtres">
                 <!-- Trouver une solution pour les boutons de filtre -->
             <ul>
                <li><i class="fas fa-money-bill-wave"></i><a href="#">Economique</a></li>
@@ -43,16 +55,17 @@
                <li><i class="fas fa-heart"></i><a href="#">Romantique</a></li>
                <li><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
             </ul>
-            </div>
-            <div class="info">
-                <i class="fal fa-info-circle"></i>
-                <p>Plus de 500 logements dans cette ville</p>
-            </div>
         </div>
+        <div class="info">
+            <i class="fal fa-info-circle"></i>
+            <p>Plus de 500 logements dans cette ville</p>
+        </div>
+        
 
     </section>
 
-    <!-- Hébergements et les plus populaires -->
+    <!-- Hébergements à Marseille -->
+
     <section class="Hotels">
         <div class="hebergments">
             <h2>Hébergements à Marseille</h2>
@@ -131,6 +144,8 @@
                 </div>
             </div>
         
+        <!-- Hébergement les plus populaires-->
+
         <div class="populaires">
             <div class="populaire_1">
                 <img src='http://fakeimg.pl/130x135?font=lobster' alt=''/>
@@ -176,6 +191,7 @@
     </section>
 
     <!-- Activités -->
+
     <section class="activites">
         <h2>Activités à Marseille</h2>
         <div class="part_1">
@@ -210,6 +226,7 @@
     </section>
 
     <!-- footer -->
+    
     <footer>
         <div class="a_propos">
             <h3>A propos</h3>
