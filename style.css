@@ -43,6 +43,18 @@ nav a
     text-decoration: none;
 }
 
+#hebergement
+{
+    color: #0065FC;
+    font-weight: 500;
+}
+
+#activites
+{
+    color:black;
+}
+
+
 #inscrire
 {
     color: #0065FC;
@@ -187,16 +199,6 @@ nav a
 
 /* Section hôtels */
 
-#hebergement
-{
-    color: #0065FC;
-    font-weight: 500;
-}
-
-#activites
-{
-    color:black;
-}
 
 .info
 {
@@ -213,6 +215,13 @@ nav a
 }
 
 /* Section hébergements à Marseille */
+
+.Hotels
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .hebergements
 {
@@ -269,3 +278,86 @@ nav a
     margin-left: 15px;
     margin-bottom: 12px;
 }
+.stars_1, .stars_2, .stars_3, .stars_4, .stars_5, .stars_6, .stars_7, .stars_8, .stars_9
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.etoile1 i, .etoile2 i, .etoile3 i, .etoile4 i, .etoile5
+{
+    color: #0065FC;
+}
+
+.stars_1 .etoile5 i, .stars_3 .etoile5 i, .stars_4 .etoile4 i, .stars_4 .etoile5 i, .stars_5 .etoile5 i
+{
+    color: #F2F2F2;
+}
+
+#afficher
+{
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+#afficher a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.plus_populaires
+{
+    border: #F2F2F2 1px solid ;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    width: 418px;
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+
+.titre_populaires
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-top: 43px; */
+}
+ .titre_populaires h2
+ {
+     margin-top: 46px;
+ }
+
+
+ .titre_populaires i
+ {
+     width: 22px;
+     height: 18px;
+ }
+
+.populaire
+{
+    width: 342px;
+    border: white 1px solid;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+}
+
+.fiche
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+
+
+
+
