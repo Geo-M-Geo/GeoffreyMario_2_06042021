@@ -309,6 +309,8 @@ nav a
     font-size: 1.2em;
 }
 
+/* Les plus populaires */
+
 .plus_populaires
 {
     border: #F2F2F2 1px solid ;
@@ -324,21 +326,26 @@ nav a
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* margin-top: 43px; */
 }
- .titre_populaires h2
- {
-     margin-top: 46px;
- }
+
+/* .titre_populaires h2
+{
+    margin-top: 46px;
+} */
 
 
- .titre_populaires i
- {
-     width: 22px;
-     height: 18px;
- }
+/* .titre_populaires i
+{
+    margin-top : 46px;
+    /* width: 22px;
+    height: 18px; */
+} 
 
+.hotel_populaire
+{
+    display: flex;
+    flex-direction: column;
+}
 .populaire
 {
     width: 342px;
@@ -350,12 +357,12 @@ nav a
     flex-direction: row;
 }
 
-.fiche
+/* .fiche
 {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
-}
+} */
 
 
 
