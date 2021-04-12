@@ -232,16 +232,13 @@ nav a
     display: flex;
     flex-direction: column;
     /* align-content: space-around; */
-    margin: 30px auto;
+    margin: 30px 40px 65px 0;
 }
 
 
 .hebergements h2
 {
-    margin-top: 45px;
-    margin-left: 40px;
-    
-
+    margin: 32px 40px 64px 0;
 }
 
 
@@ -266,6 +263,7 @@ nav a
     margin-bottom: 30px;
     box-shadow: 0 0 1em #d5d5d5;
     
+
 }
 
 .hotel a
@@ -285,8 +283,16 @@ nav a
 .description
 {
     margin-left: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
+    margin-top: 0px;
 }
+
+.description h3, p
+{
+    margin: 12px 0 12px 0;
+    font-size: 1em;
+}
+
 .stars_1, .stars_2, .stars_3, .stars_4, .stars_5, .stars_6, .stars_7, .stars_8, .stars_9
 {
     display: flex;
@@ -321,36 +327,54 @@ nav a
 
 .plus_populaires
 {
-    width: 417px;
+    width: 420px;
     border: 1px #F2F2F2 solid;
     background-color: #F2F2F2;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .titre_populaires
 {
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
 }
 
 .titre_populaires i
 {
     margin-top: 28px;
+    margin-bottom: 25px;
     font-size: 20px;
 }
 
+.hotel_populaire
+{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+}
 .populaire
 {
     border: white 1px solid;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 1em #d5d5d5;
+    margin: 0 37px 80px 37px;   
     display: flex;
     flex-direction: row;
-}
+} 
 
+/* .populaire a
+{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+} */
 
 
 
