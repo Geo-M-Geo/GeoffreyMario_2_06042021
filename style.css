@@ -432,22 +432,18 @@ nav a
     color: black;
 }
 
-/* .part_1,  h3
-{
-    padding-left: 19px;
-} */
-
 .part_1 img, .part_2 img, .part_3 img, .part_4 img
 {
     border-radius: 20px 20px 0 0;
 }
 
-.part_1, .part_2, .part_3, .part_4
+.part_1, .pomegues, .frioul, .part_3, .notre_dame, .longchamp
 {
     box-shadow: 0 0 1em #d5d5d5;
     border: 0 solid white;
     border-radius: 20px;
 }
+
 
 
 
