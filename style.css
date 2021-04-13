@@ -314,7 +314,6 @@ nav a
     text-decoration: none;
     color: black;
     font-weight: 700;
-    font-size: 1.2em;
 }
 
 #afficher
@@ -332,24 +331,23 @@ nav a
     background-color: #F2F2F2;
     border-radius: 15px;
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 63px;
+    margin: 30px auto 63px auto;
 }
 
 .titre_populaires
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 30px;
+    margin-left: 37px;
 }
 
 .titre_populaires i
 {
-    margin-top: 28px;
-    margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 20px auto 25px 99px;
 }
 
 .hotel_populaire
@@ -357,9 +355,8 @@ nav a
     display: flex;
     width: 343px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* margin: 0 0 0 0; */
     padding-left: 37px;
+    margin-top: 11px;
 
 }
 .populaire a
@@ -373,6 +370,8 @@ nav a
     margin-bottom: 50px;
     text-decoration: none;
     color: black;
+    font-size: 0.9em;
+    box-shadow: 0 0 1em #d5d5d5;
 } 
 
 .populaire img
@@ -381,14 +380,74 @@ nav a
     padding: 5px 0 5px 5px;
 }
 
+.fiche
+{
+    padding-left: 15px;    
+}
 
-/* .populaire a
+.fiche h3
+{
+    padding-top: 5px;
+    margin: 8px auto 8px auto;
+}
+
+.fiche p, .stars_7, .stars_8, .stars_9
+{
+    font-size: 1.1em;
+}
+
+.stars_7, .stars_8, .stars_9
+{
+    padding-top: 24px;
+}
+
+.stars_8 .etoile5, .stars_9 .etoile5
+{
+    color: #F2F2F2;
+}
+
+/* Section activités à Marseille */
+
+.activites_marseille
+{
+    width: 1338px;
+}
+
+.activites
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.activites h3
+{
+    padding-left: 19px;
+}
+
+.activites a
+{
     text-decoration: none;
+    font-size: 1em;
     color: black;
+}
+
+/* .part_1,  h3
+{
+    padding-left: 19px;
 } */
+
+.part_1 img, .part_2 img, .part_3 img, .part_4 img
+{
+    border-radius: 20px 20px 0 0;
+}
+
+.part_1, .part_2, .part_3, .part_4
+{
+    box-shadow: 0 0 1em #d5d5d5;
+    border: 0 solid white;
+    border-radius: 20px;
+}
 
 
 
