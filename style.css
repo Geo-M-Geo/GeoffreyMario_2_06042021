@@ -1,8 +1,11 @@
-body
+*
+{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+header, .recherche, .Hotels, .plus_populaires, .activites_marseille
 {
     width: 1338px;
     margin: auto;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 h1, h2
@@ -413,6 +416,11 @@ nav a
     width: 1338px;
 }
 
+.activites_marseille h2
+{
+    margin-bottom: 30px;
+}
+
 .activites
 {
     display: flex;
@@ -423,6 +431,7 @@ nav a
 .activites h3
 {
     padding-left: 19px;
+
 }
 
 .activites a
@@ -468,9 +477,42 @@ nav a
     margin-top: 29px;
 }
 
+/* Footer */
 
+footer
+{
+    background-color: #F2F2F2; 
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.fin
+{
+    display: flex;
+    flex-direction: row;
+    width: 1338px;
+    margin-top: 50px;
+}
 
+.fin a
+{
+    text-decoration: none;
+    color: black;
+}
 
+.fin ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 23px;
+    margin-right: 240px;
+    
+}
+
+.fin li
+{
+    margin-bottom: 19px;
+}
 
 
 
