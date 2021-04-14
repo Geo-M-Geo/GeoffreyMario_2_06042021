@@ -444,6 +444,29 @@ nav a
     border-radius: 20px;
 }
 
+.part_2 a
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.frioul
+{
+    margin-top: 29px;
+    padding-bottom : 2px;
+}
+
+.part_4 a
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.longchamp
+{
+    padding-bottom: 2px;
+    margin-top: 29px;
+}
 
 
 
