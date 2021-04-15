@@ -138,6 +138,13 @@ nav a
     
 }
 
+.filtres #money:hover, #familly:hover, #heart:hover, #dog:hover
+{
+    /* background-color: #0065FC; */
+    color:#0065FC;
+    border-color: #0065FC;
+}
+
 .filtres ul
 {
     display: flex;
