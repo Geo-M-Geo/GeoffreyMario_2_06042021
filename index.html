@@ -12,21 +12,22 @@
 </head>
 
 <body>
+
+    <main>
     
     <!-- Logo et navigation -->
 
     <header>
-        <div id="logo">
+        <div class="logo">
             <img src="images/logo/Reservia.svg" alt="logo Reservia">
         </div>
         <nav>
             <div class="menu">
-            <ul>
-                <div>
-                <li><a id="hebergement" href="#ancre_hebergements">Hébergements</a></li></div>
-                <div><li><a id="activites" href="#ancre_activites">Activités</a></li></div>
-                <div><li><a id="inscrire" href="#">S'inscrire</a></li></div>
-            </ul>
+                <ul>
+                    <li><a class="nav_hebergement" href="#ancre_hebergements">Hébergements</a></li>
+                    <li><a class="nav_activites" href="#ancre_activites">Activités</a></li>
+                    <li><a class="nav_inscrire" href="#">S'inscrire</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -40,37 +41,42 @@
         <p>En plein centre ville ou en pleine nature</p>
         
         <div class="barre_recherche">
+            
             <div>
                 <i id="position" class="fas fa-map-marker-alt"></i>
+            </div>            
+            <div>
+                <form class="barre" method="post" action="traitement.php">               
+                    <input class="texte_recherche" type="text" name="lieu" placeholder="Marseille, France" />       
+                </form>
             </div>
             <div>
-            <form class="barre" method="post" action="traitement.php">               
-                <input id="text" type="text" name="lieu" placeholder="Marseille, France" />       
-            </form>
+                <a class="bouton_recherche" href="#">Rechercher</a>            
             </div>
-            <div>
-                <a id="bouton_recherche" href="#">Rechercher</a>
-            </div>
+
         </div>
 
         <div class="filtres">
                
-            <div>
             <h3>Filtres</h3>
-            </div>
+
+            <div class="barre_filtres">
             <ul>
-               <li class="economique"><i class="fas fa-money-bill-wave"></i><a id="money" href="#">Économique</a></li>
-               <li class="familial"><i class="fas fa-child"></i><a id="familly" href="#">Familial</a></li>
-               <li class="romantique"><i class="fas fa-heart"></i><a id="heart" href="#">Romantique</a></li>
-               <li class="animaux"><i class="fas fa-dog"></i><a id="dog" href="#">Animaux autorisés</a></li>
+               <li class="economique"><i class="fas fa-money-bill-wave"></i><a class="logo_money" href="#">Économique</a></li>
+               <li class="familial"><i class="fas fa-child"></i><a class="logo_familly" href="#">Familial</a></li>
+               <li class="romantique"><i class="fas fa-heart"></i><a class="logo_heart" href="#">Romantique</a></li>
+               <li class="animaux"><i class="fas fa-dog"></i><a class="logo_dog" href="#">Animaux autorisés</a></li>
             </ul>
+            </div>
+
         </div>
+        
         <div class="info">
             <div>
                 <i class="fas fa-info-circle"></i>
             </div>
             <div>
-                <p id="cinq_cent">Plus de 500 logements dans cette ville</p>
+                <p class="cinq_cent">Plus de 500 logements dans cette ville</p>
             </div>
         </div>
        
@@ -78,7 +84,9 @@
 
     <!-- Hébergements à Marseille -->
 
-    <section class="Hotels">
+    <section class="section_hotels">
+
+    
         
         <div class="hebergements" id="ancre_hebergements">
             <h2>Hébergements à Marseille</h2>
@@ -88,6 +96,7 @@
                 <div class="hotel">
                     <a href="#">
                     <img src='images_size/hotel_la_cannebiere.jpg' alt=''/>
+                    
                     <div class="description">
                     <h3>Auberge la Cannebière</h3>
                     <p>Nuit à partir de <strong>25€</strong></p>
@@ -115,6 +124,7 @@
                 <div class="hotel">
                     <a href="#">
                     <img src='images_size/hotel_du_port.jpg' alt=''/>
+                    
                     <div class="description">
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de <strong>52€</strong></p>
@@ -142,6 +152,7 @@
                 <div class="hotel">
                     <a href="#">
                     <img src='images_size/hotel_les_mouettes.jpg' alt=''/>
+                    
                     <div class="description">
                     <h3>Hôtel Les mouettes</h3>
                     <p>Nuit à partir de <strong>76€</strong></p>
@@ -169,6 +180,7 @@
                 <div class="hotel">
                     <a href="#">
                     <img src='images_size/hotel_a_mer.jpg' alt=''/>
+                    
                     <div class="description">
                     <h3>Hôtel de la mer</h3>
                     <p>Nuit à partir de <strong>46€</strong></p>
@@ -197,7 +209,8 @@
                     <a href="#">
                     <img src='images_size/auberge_le_panier.jpg' alt=''/>
                     <div class="description">
-                    <h3>Auberge le Panier</h3>
+                    
+                        <h3>Auberge le Panier</h3>
                     <p>Nuit à partir de <strong>23€</strong></p>
                     <div class="stars_5">
                         <div class="etoile1">
@@ -223,6 +236,7 @@
                 <div class="hotel">
                     <a href="#">
                     <img src='images_size/hotel_chez_amina.jpg' alt=''/>
+                    
                     <div class="description">
                     <h3>Hôtel chez Amina</h3>
                     <p>Nuit à partir de <strong>96€</strong></p>
@@ -247,16 +261,17 @@
                     </a>
                 </div>
             </div>        
-                <div id="afficher">
+                
+                <div class="afficher">
                     <a href="#">Afficher plus</a>
                 </div>
         </div>
         
         <!-- Hébergement les plus populaires-->
 
-        <div class="plus_populaires">
+        <div class="hotels_plus_populaires">
             
-            <div class="titre_populaires">
+            <div class="titre_hotels_populaires">
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line large"></i>
             </div>
@@ -266,9 +281,11 @@
                     <div class="populaire">    
                         <a href="#">                        
                             <img src='images_size/hotel_le_soleil_du_matin.jpg' alt=''/>                                           
+                        
                         <div class="fiche">
                             <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de <strong>128€</strong></p>
+                        
                         <div class="stars_7">
                             <div class="etoile1">
                                 <i class="fas fa-star"></i>
@@ -287,12 +304,13 @@
                             </div>   
                         </div>
                         </div>                        
-                    </a>
+                        </a>
                     </div>
             
                     <div class="populaire">  
                         <a href="#">                      
                         <img src='images_size/au_coeur_de_leau_chambre_dhote.jpg' alt=''/>                        
+                        
                         <div class="fiche">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de <strong>71€</strong></p>
@@ -314,12 +332,13 @@
                             </div>
                         </div>
                         </div>
-                    </a>
+                        </a>
                     </div>
             
                     <div class="populaire">
                         <a href="#">                
                         <img src='images_size/hotel_tout_bleu_et_blanc.jpg' alt=''/>                      
+                        
                         <div class="fiche">
                             <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de <strong>68€</strong></p>
@@ -341,11 +360,13 @@
                             </div>
                         </div>
                         </div>
-                    </a>
+                        </a>
                     </div>
                 </div>
         </div>
+    
     </section>
+
 
     <!-- Activités -->
 
@@ -398,6 +419,9 @@
         </div>    
     </section>
 
+    </main> 
+
+
     <!-- footer -->
     
     <footer>
@@ -429,6 +453,6 @@
         </div>
 
     </footer>
-   
+
 </body>
 </html>
