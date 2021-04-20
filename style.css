@@ -41,8 +41,9 @@ h1, h2
 header
 {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
+   
 }
 
 .logo 
@@ -115,30 +116,63 @@ nav
     padding: 68px 28px 0 28px;
 }
 
-@media all and (max-width:440px)
+@media all and (max-width:475px)
 {
-    .menu ul 
+
+    header
     {
-        flex-wrap: wrap-reverse;
+       flex-direction: column;
+       position: relative;
     }
 
-    .nav_inscrire
-{
-    color: #0065FC;
-    font-weight: bold;
-    border-top: 3px white solid;
-    border-width: 161px;    
-    padding: 68px 28px 0 28px;
-    
-}
+    .nav_activites, .nav_hebergement, .nav_inscrire
+    {
+       border-top: 0;
+    }
 
-.nav_inscrire:hover
-{
-    border-top: 3px #0065FC solid;
-    border-width: 161px;    
-    padding: 68px 28px 0 28px;
-}
 
+   .nav_inscrire
+   {
+    position: absolute;
+    top: 59px;
+    right: 22px;
+    padding: 0px;
+   }
+
+   .menu ul 
+   {
+       
+       padding:0;
+       justify-content: space-around;
+   }
+
+   nav 
+   {
+       margin-top: 37px;
+   }
+
+   .nav_hebergement
+   {
+       border-bottom: 3px #0065FC solid ;
+       padding:0 0 16px 0;
+              width: 100%;
+   }
+
+   .nav_activites
+   {
+       border-bottom: 3px #cdcdcd solid;
+   }
+   
+   .hotel
+   {
+       width: 100%;
+   }
+   /* .nav_activites
+   {
+    border-bottom: white 3px solid;
+    border-width: 161px;    
+    padding: 0 28px 17px 28px;
+   } */
 
 }
 
@@ -405,14 +439,7 @@ input::placeholder
     margin-top: 40px;
 }
 
-@media all and (max-width: 1400px)
-{
-    .section_hotels
-    {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-}
+
 
 .hebergements
 {
@@ -494,11 +521,35 @@ input::placeholder
     font-weight: 700;
 }
 
-/* .afficher
+@media all and (max-width: 1400px)
 {
-    margin-bottom: 40px;
-} */
+    .section_hotels
+    {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
 
+@media all and (max-width:588px)
+{
+    .hebergements_hotel
+    {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:584px)
+{
+    .hebergements
+    {
+        width: auto;
+        height: auto;
+    }
+    .hotel img
+    {
+        width: 100%;
+    }
+}
 
 
 
@@ -519,14 +570,14 @@ input::placeholder
     margin-left: 40px;
 }
 
-.titre_plus_populaires
+.titre_hotels_populaires
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.titre_plus_populaires i
+.titre_hotels_populaires i
 {
     font-size: 25px;
     align-self: center;
@@ -591,7 +642,20 @@ input::placeholder
 }
 
 
+@media all and (max-width:544px)
+{
+    .hotels_plus_populaires
+    {
+        justify-content: space-around;
+    }
+    .hotel_populaire
+    {
+        width: auto;
+    }
 
+
+    
+}
 
 
 
@@ -663,7 +727,13 @@ input::placeholder
     margin-top: 30px;
 }
 
-
+@media all and (max-width:331px)
+{
+    .activites
+    {
+        justify-content: space-between;
+    }
+}
 
 
 
@@ -749,13 +819,4 @@ footer
     {
         flex-direction: column;
     }
-
-
-
-
-
-
-
-    
-
-
+}
