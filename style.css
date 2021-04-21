@@ -12,6 +12,7 @@ main
     margin: 0 auto;
 }
 
+
 h1, h2
 {
     font-weight:700;
@@ -76,25 +77,12 @@ nav
     
 }
 
-.nav_hebergement:hover
-{
-    border-top: 3px #0065FC solid;
-    border-width: 161px;
-    padding: 68px 28px 0 28px;
-}
+
 
 .nav_activites
 {
     color:black;
     border-top: white 3px solid;
-    border-width: 161px;    
-    padding: 68px 28px 0 28px;
-}
-
-
-.nav_activites:hover
-{
-    border-top:#cdcdcd 3px solid;
     border-width: 161px;    
     padding: 68px 28px 0 28px;
 }
@@ -109,12 +97,30 @@ nav
     
 }
 
+.nav_hebergement:hover
+{
+    border-top: 3px #0065FC solid;
+    border-width: 161px;
+    padding: 68px 28px 0 28px;
+}
+
 .nav_inscrire:hover
 {
     border-top: 3px #0065FC solid;
     border-width: 161px;    
     padding: 68px 28px 0 28px;
 }
+
+.nav_activites:hover
+{
+    border-top:#cdcdcd 3px solid;
+    border-width: 161px;    
+    padding: 68px 28px 0 28px;
+}
+
+
+
+
 
 @media all and (max-width:475px)
 {
@@ -138,6 +144,8 @@ nav
     right: 22px;
     padding: 0px;
    }
+
+
 
    .menu ul 
    {
@@ -175,6 +183,17 @@ nav
    } */
 
 }
+
+@media all and (max-width:375px)
+{
+    .nav_inscrire
+    {
+        right: 20px;
+    }
+    
+}
+
+
 
 
 
@@ -231,6 +250,14 @@ nav
     border-top: #F2F2F2 1px solid;
     border-bottom: #F2F2F2 1px solid;
     padding:15px 50px 15px 17px;
+}
+
+@media all and (max-width:362px)
+{
+    .texte_recherche
+    {
+        padding: 15px 20px 15px 17px;
+    }
 }
 
 input::placeholder
@@ -330,6 +357,8 @@ input::placeholder
         margin: 0;
     }
 }
+
+
 
 
 .logo_money, .logo_familly, .logo_heart, .logo_dog
@@ -451,6 +480,15 @@ input::placeholder
 
 }
 
+@media all and (max-width: 426)
+{
+    .hebergements
+    {
+        justify-content: center;
+        margin: auto;
+    }
+}
+
 .hebergements_hotel
 {
     
@@ -468,6 +506,7 @@ input::placeholder
     border-radius: 20px;
     margin-bottom: 40px;
     box-shadow: 0 0 1em #d5d5d5;
+    width: 245px;
 }
 
 .hotel a
@@ -535,6 +574,7 @@ input::placeholder
     .hebergements_hotel
     {
         flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -542,12 +582,17 @@ input::placeholder
 {
     .hebergements
     {
-        width: auto;
-        height: auto;
+        justify-content: center;
+        align-items: center;
     }
     .hotel img
     {
         width: 100%;
+    }
+
+    .hebergements_hotel
+    {
+        justify-content: center;
     }
 }
 
@@ -568,6 +613,26 @@ input::placeholder
     padding: 47px 38px 32px 38px;
     flex-wrap: wrap;
     margin-left: 40px;
+}
+
+@media all and (max-width:475px)
+{
+    .hotels_plus_populaires
+    {
+        margin-left: 0;
+    }
+}
+@media all and (max-width:430px)
+{
+    .hotels_plus_populaires
+    {
+        margin: 0 auto;
+    }
+
+    .populaire img 
+    {
+        width: 100%;
+    }
 }
 
 .titre_hotels_populaires
@@ -695,6 +760,24 @@ input::placeholder
 {
     border-radius: 20px 20px 0 0;
 }
+@media all and (max-width:625px)
+{
+    .activites_marseille h2 
+    {
+        text-align: center;
+    }
+    .activites
+    {
+        justify-content: center;
+    }
+}
+@media all and (max-width: 428px)
+{
+    .activites img 
+    {
+        width: 100%;
+    }
+}
 
 .part_1, .pomegues, .frioul, .part_3, .notre_dame, .longchamp
 {
@@ -748,15 +831,17 @@ footer
 {
     background-color: #F2F2F2; 
     margin-top: 80px;
-    display: flex;
-    justify-content: center;
 }
+
+
 .fin
 {
     display: flex;
     flex-direction: row;
-    width: 1338px;
-    margin: 50px 0 55px 0;
+    justify-content: space-between;
+    max-width: 1035px;
+    padding: 48px 50px 50px 50px;
+    
 }
 
 .fin a
@@ -769,7 +854,7 @@ footer
 {
     list-style-type: none;
     padding: 0;
-    margin: 23px 240px 0 0;    
+    /* margin: 23px 240px 0 0;     */
 }
 
 .fin li
@@ -777,16 +862,35 @@ footer
     margin-bottom: 19px;
 }
 
-@media all and (max-width:1370px)
+@media all and (max-width:1024px)
 {
     .fin
     {
         flex-wrap: wrap;
+        margin-left: 30px;
     }
 }
 
+@media all and (max-width: 432px)
+{
+    .fin
+    {
+        /* max-width: 416px; */
+        align-items: center;
+    }
+}
 
-@media all and (max-width:430px) 
+@media all and (max-width: 375px)
+{
+    footer 
+    
+        {justify-content: end;}
+}
+
+
+
+
+/* @media all and (max-width:430px) 
 {
     main 
     {
@@ -795,9 +899,9 @@ footer
     }
     header
     {
-        flex-direction: column;
+        flex-direction: column; */
         /* position: relative; */
-    }
+    /* }
 
     .activites
     {
@@ -819,4 +923,4 @@ footer
     {
         flex-direction: column;
     }
-}
+} */
