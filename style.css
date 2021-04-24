@@ -29,7 +29,46 @@ h1, h2
     font-size: 1.4em;
 }
 
+@media all and (max-width:375px)
+{
 
+    body 
+    {
+        margin: 0;
+        padding: 0;
+    }
+    h1,.filtres , .populaire, .hebergements h2, .hebergements_hotel, .afficher, .info, .activites
+    {
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .titre_hotels_populaires
+    {
+        justify-content:space-between;
+    }
+
+    .logo
+    {
+        margin-top: 40px;
+    }
+
+    .hotels_plus_populaires
+    {
+        padding: 47px 0 0 0;
+    }
+
+    .titre_hotels_populaires
+    {
+        justify-content: space-between;
+    }
+
+    .hebergements
+    {
+        background-color: white;
+        margin:0;
+    }
+    
+}
 
 
 
@@ -112,45 +151,13 @@ nav
 
 /* Media de Header */
 
-@media all and (max-width:375px)
-{
-    .nav_inscrire
-    {
-        right: 20px;
-    }
-
-    body 
-    {
-        margin: 0;
-        padding: 0;
-    }
-    .logo, .recherche, .hebergements, .hotel, .afficher, .titre_hotels_populaires, .populaire, .activites_marseille h2, .activites
-    {
-        margin: auto 20px;
-    }
-    .logo
-    {
-        margin-top: 45px;
-    }
-
-    .hotels_plus_populaires
-    {
-        padding: 47px 0 0 0;
-    }
-
-    .hebergements
-    {
-        background-color: white;
-    }
-    
-}
 
 @media all and (max-width:475px)
 {
 
-    header
+    main
     {
-       flex-direction: column;
+       /* flex-direction: column; */
        position: relative;
     }
 
@@ -159,23 +166,30 @@ nav
         border-top: 0;
     }
 
-   .nav_inscrire
+   .nav_hebergement
     {
         position: absolute;
-        top: 59px;
-        right: 22px;
-        padding: 0px;
+        left: 39px;
+        top: 112px;
+    }
+
+    .nav_activites
+    {
+        position: absolute;
+        right:100px;
+        top:112px;
+        padding: 0;
     }
 
    .menu ul 
    {      
-        padding:0;
-        justify-content: space-around;
+        padding-left:0;
+        /* justify-content: space-around; */
    }
 
    nav 
    {
-       margin-top: 37px;
+       margin-top: 47px;
    }
 
    .nav_hebergement
@@ -449,22 +463,6 @@ input::placeholder
     padding: 47px 40px 40px 40px;
 }
 
-@media all and (max-width: 589px)
-{
-    
-    /* .hotel img
-    {
-    padding-bottom: 5px;
-    padding-right: 0;
-    width: 100%;
-    align-items: center;
-    } */
-
-    /* .hotel
-    {
-        width: 335px;
-    } */
-}
 
 .hebergements_hotel
 {   
@@ -537,21 +535,6 @@ input::placeholder
 
 /* Media hébergements */
 
-@media all and (max-width: 375px)
-{
-    /* .hebergements h2
-    {
-        margin-left: 20px;
-    }
-    .hotel
-    {
-        width: 335px;
-    }
-    .hotel img 
-    {
-        width:325px;
-    } */
-}
 
 @media all and (max-width: 426px)
 {
