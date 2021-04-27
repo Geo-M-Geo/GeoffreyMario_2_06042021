@@ -190,7 +190,6 @@ nav
    .menu ul 
    {      
         padding-left:0;
-        /* justify-content: space-around; */
    }
 
    nav 
@@ -493,10 +492,6 @@ input::placeholder
     text-decoration: none;   
 }
 
-.hotel_la_cannebiere
-{
-    background-image: url(images_phone/auberge_de_la_canneviere_phone.jpg);
-}
 
 .hotel img
 {
@@ -517,7 +512,16 @@ input::placeholder
     font-size: 1em;
 }
 
+.full
+{
+    display: block;
+}
 
+.phone
+{
+    display: none;
+}
+    
 /* Etoiles hébergements à Marseille */
 
 .stars_1, .stars_2, .stars_3, .stars_4, .stars_5, .stars_6, .stars_7, .stars_8, .stars_9
