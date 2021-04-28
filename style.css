@@ -292,7 +292,7 @@ input::placeholder
     .barre_recherche
     {
         padding-left: 10px !important;
-        padding-right: 5px !;
+        padding-right: 5px;
     }
 }
 
@@ -776,7 +776,8 @@ input::placeholder
     .populaire, .hotel, .activites
     {
     max-width: 314px;
-    padding: 3px auto;
+    padding-left: 3px;
+    padding-right: 3px;
     }
 
     .hotel img 
