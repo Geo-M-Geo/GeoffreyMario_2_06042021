@@ -1045,7 +1045,7 @@ footer
     flex-direction: row;
     justify-content: space-between;
     max-width: 1035px;
-    padding: 48px 50px 50px 50px;   
+    padding: 48px 50px 50px 20px;   
 }
 
 .fin a
