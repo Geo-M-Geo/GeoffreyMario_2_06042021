@@ -213,6 +213,8 @@ nav
 
 }
 
+    /* Section titre, barre de recherche et filtres */ 
+
 /* Barre de recherche */
 
 .recherche
@@ -327,7 +329,7 @@ input::placeholder
     }
 }
 
-/* Filtres */
+/* Filtres  de recherche */
 
 .filtres 
 {
@@ -436,7 +438,7 @@ input::placeholder
     }   
 }
 
-/* Point info  */
+/* Info sur la ville  */
 
 .info
 {
@@ -624,7 +626,7 @@ input::placeholder
     }
 }
 
-/* Les plus populaires */
+/* hébergements les plus populaires */
 
 .hotels_plus_populaires
 {
@@ -707,23 +709,7 @@ input::placeholder
     color: #F2F2F2;
 }
 
-/* Media despPlus populaires */
-
-@media all and (max-width:375px)
-{
-    .populaire
-    {
-        max-width: 310px !important;
-        padding-right: 5px !important;
-        padding-left: 5px !important;
-    }
-    .titre_hotels_populaires
-    {
-        justify-content: space-between !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-}
+/* Media les plus populaires */
 
 @media all and (max-width:363px)
 {
@@ -746,6 +732,22 @@ input::placeholder
     .titre_hotels_populaires
     {
         justify-content: space-between;
+    }
+}
+
+@media all and (max-width:375px)
+{
+    .populaire
+    {
+        max-width: 310px !important;
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+    .titre_hotels_populaires
+    {
+        justify-content: space-between !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
     }
 }
 
@@ -816,7 +818,7 @@ input::placeholder
     }
 }
 
-/* Section activités à Marseille */
+/* Activités */
 
 .activites_marseille h2
 {
@@ -889,7 +891,7 @@ input::placeholder
     margin-top: 30px;
 }
 
-/* Media activites a Marseille */
+/* Media activités */
 
 @media all and (max-width:331px)
 {
