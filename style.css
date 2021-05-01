@@ -126,7 +126,7 @@ nav
 /* Media de Header */
 
 
-@media all and (max-width:475px)
+@media all and (max-width:595px)
 {
 
     body 
@@ -313,7 +313,15 @@ input::placeholder
     }
 }
 
-@media all and (max-width:428px)
+@media all and (max-width:388px)
+{
+    .texte_recherche
+    {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width:478px)
 {
     .loupe 
 {
@@ -497,6 +505,8 @@ input::placeholder
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;  
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .hotel
@@ -735,7 +745,7 @@ input::placeholder
 
 /* Media despPlus populaires */
 
-@media all and (max-width:320px)
+/* @media all and (max-width:320px)
 {
     .populaire
     {
@@ -751,22 +761,25 @@ input::placeholder
         padding-right: 5px !important;
     }
 
-}
+} */
 
 @media all and (max-width:375px)
 {
+    .populaire
+    {
+        max-width: 310px !important;
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+
     .titre_hotels_populaires
     {
         justify-content: space-between !important;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
     }
 
-    .hotels_plus_populaires
-    {
-        padding: 47px 0 0 0;
-        width: 100%;
-    }
+
 
 }
 
@@ -808,7 +821,7 @@ input::placeholder
 
     .populaire
     {
-        width: 280px;
+        width: 335px;
     }
 }
 
@@ -1045,7 +1058,7 @@ footer
     flex-direction: row;
     justify-content: space-between;
     max-width: 1035px;
-    padding: 48px 50px 50px 20px;   
+    padding: 48px 50px 50px 50px;   
 }
 
 .fin a
@@ -1099,7 +1112,11 @@ footer
 {
     footer .fin
     {
-        max-width: 1340px;
+        max-width: 1338px;
         margin: auto;
+    }
+    .fin ul
+    {
+        padding-right: 200px;
     }
 }
