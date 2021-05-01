@@ -12,7 +12,6 @@ main
     margin: 0 auto;
 }
 
-
 h1, h2
 {
     font-weight:700;
@@ -44,8 +43,6 @@ h1, h2
 
 }
 
-
-
 /* Header */
 
 header
@@ -76,6 +73,7 @@ nav
     flex-direction: row;
     list-style-type: none;
 }
+
 .nav_hebergement
 {
     color: #0065FC;
@@ -124,7 +122,6 @@ nav
 }
 
 /* Media de Header */
-
 
 @media all and (max-width:595px)
 {
@@ -212,14 +209,9 @@ nav
        position: absolute;
        top: 150px;
        right: 0;
-
    }
 
 }
-
-
-
-
 
 /* Barre de recherche */
 
@@ -283,8 +275,6 @@ input::placeholder
     visibility: hidden;
 }
 
-
-
 /* Media de recherche */
 
 @media all and (max-width:320px)
@@ -295,7 +285,6 @@ input::placeholder
         padding-right: 5px;
     }
 }
-
 
 @media all and (max-width:362px)
 {
@@ -337,10 +326,6 @@ input::placeholder
         display: none;
     }
 }
-
-
-
-
 
 /* Filtres */
 
@@ -426,8 +411,6 @@ input::placeholder
     border-color: #0065FC;
 }
 
-
-
 /* Media de filtres */
 
 @media all and (max-width:1022px)
@@ -450,14 +433,10 @@ input::placeholder
         padding-left: 0;
         margin: 0;
         flex-wrap: wrap;
-    }
-    
+    }   
 }
 
-
-
 /* Point info  */
-
 
 .info
 {
@@ -472,10 +451,6 @@ input::placeholder
 {
     margin-left: 12px;
 }
-
-
-
-
 
     /* Section hébergements à Marseille et les plus populaires */
 
@@ -524,7 +499,6 @@ input::placeholder
     text-decoration: none;   
 }
 
-
 .hotel img
 {
     padding-top: 5px;
@@ -554,7 +528,6 @@ input::placeholder
     display: none;
 }
     
-
 /* Etoiles hébergements à Marseille */
 
 .stars_1, .stars_2, .stars_3, .stars_4, .stars_5, .stars_6, .stars_7, .stars_8, .stars_9
@@ -590,10 +563,7 @@ input::placeholder
     }
 }
 
-
-
 /* Media hébergements */
-
 
 @media all and (max-width:375px)
 {
@@ -602,7 +572,6 @@ input::placeholder
         background-color: white;
         margin:0;
     }
-
     .hebergements h2
     {
         margin: 0 !important;
@@ -632,7 +601,6 @@ input::placeholder
     {
         background-color: white;
     }
-
     .hebergements h2
     {
         margin-left: 20px;
@@ -655,8 +623,6 @@ input::placeholder
         justify-content: center;
     }
 }
-
-
 
 /* Les plus populaires */
 
@@ -741,27 +707,7 @@ input::placeholder
     color: #F2F2F2;
 }
 
-
-
 /* Media despPlus populaires */
-
-/* @media all and (max-width:320px)
-{
-    .populaire
-    {
-        max-width: 310px !important;
-        padding-right: 5px !important;
-        padding-left: 5px !important;
-    }
-
-    .titre_hotels_populaires
-    {
-        justify-content: space-between !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-
-} */
 
 @media all and (max-width:375px)
 {
@@ -771,16 +717,12 @@ input::placeholder
         padding-right: 5px !important;
         padding-left: 5px !important;
     }
-
     .titre_hotels_populaires
     {
         justify-content: space-between !important;
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
-
-
-
 }
 
 @media all and (max-width:363px)
@@ -792,24 +734,19 @@ input::placeholder
     padding-left: 3px;
     padding-right: 3px;
     }
-
     .hotel img 
     {
         max-width: 304px;
     }
-
     h1,.logo, .filtres ,.barre_recherche,.recherche h1 + p, .populaire, .hebergements h2, .hebergements_hotel, .afficher, .info, .activitesgit, .activites_marseille h2, .titre_hotels_populaires
     {
         padding-left:10px;
         padding-right: 10px;
     }
-
     .titre_hotels_populaires
     {
         justify-content: space-between;
     }
-    
-
 }
 
 @media all and (max-width:430px)
@@ -818,7 +755,6 @@ input::placeholder
     {
         margin: 0 auto;
     }
-
     .populaire
     {
         width: 335px;
@@ -847,8 +783,7 @@ input::placeholder
     .populaire 
     {
         width: 335px;
-    }  
-      
+    }       
 }
 
 @media all and (max-width:781px)
@@ -856,8 +791,7 @@ input::placeholder
     .titre_hotels_populaires
     {
         justify-content: space-around;
-    }
-    
+    }    
 }
 
 @media all and (max-width:1400px)
@@ -870,7 +804,6 @@ input::placeholder
         flex-wrap: wrap;
         width: auto;
     }
-
     .populaire 
     {
         max-width: 345px;
@@ -883,11 +816,7 @@ input::placeholder
     }
 }
 
-
-
-
 /* Section activités à Marseille */
-
 
 .activites_marseille h2
 {
@@ -960,8 +889,6 @@ input::placeholder
     margin-top: 30px;
 }
 
-
-
 /* Media activites a Marseille */
 
 @media all and (max-width:331px)
@@ -978,12 +905,10 @@ input::placeholder
     {
         text-align: inherit!important;
     }
-
     .full
     {
         display: none;
     }
-
     .phone
     {
         display: block;
@@ -1012,17 +937,14 @@ input::placeholder
     {
         margin-bottom: 30px;
     }
-
     .hebergements_hotel
     {
         justify-content: center;
     }
-
     .hebergements h2 
     {
         text-align: center;
     }
-
 }
 
 @media all and (max-width: 665px)
@@ -1031,17 +953,11 @@ input::placeholder
     {
         justify-content: center;
     }
-
     .activites_marseille h2 
     {
         text-align: center;
     }
 }
-
-
-
-
-
 
 /* Footer */
 
@@ -1050,7 +966,6 @@ footer
     background-color: #F2F2F2; 
     margin-top: 80px;
 }
-
 
 .fin
 {
@@ -1078,7 +993,6 @@ footer
     margin-bottom: 19px;
 }
 
-
 /* Media du footer */
 
 @media all and (max-width: 432px)
@@ -1100,7 +1014,6 @@ footer
     {
         flex-wrap: wrap;
     }
-
     h1,.logo, .filtres ,.barre_recherche,.recherche h1 + p, .populaire, .hebergements h2, .hebergements_hotel, .afficher, .info, .activites, .activites_marseille h2
     {
         padding-left:20px;
