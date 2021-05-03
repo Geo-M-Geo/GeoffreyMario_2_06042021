@@ -78,16 +78,12 @@ nav
 {
     color: #0065FC;
     font-weight: 500;
-    border-top: 3px white solid;
-    border-width: 161px;
     padding: 68px 28px 0 28px;    
 }
 
 .nav_activites
 {
     color:black;
-    border-top: white 3px solid;
-    border-width: 161px;    
     padding: 68px 28px 0 28px;
 }
 
@@ -95,8 +91,6 @@ nav
 {
     color: #0065FC;
     font-weight: bold;
-    border-top: 3px white solid;
-    border-width: 161px;    
     padding: 68px 28px 0 28px;    
 }
 
