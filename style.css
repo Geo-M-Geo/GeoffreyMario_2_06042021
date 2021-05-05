@@ -231,12 +231,9 @@ nav
 
 #position
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 20px 0 0 20px;
     background-color: #F2F2F2;
-    padding: 18px 20px 17px 20px;   
+    padding: 18px 20px 18px 20px;   
 }
 
 .texte_recherche
