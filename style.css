@@ -249,6 +249,7 @@ nav
 input::placeholder
 {
     color: black;
+    opacity: 1;
 }
 
 .bouton_recherche 
